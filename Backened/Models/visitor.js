@@ -11,7 +11,7 @@ const visitorSchema = new mongoose.Schema({
         required: true,
         unique: true,
         trim: true,
-        match: [/^\\S+@\\S+\\.\\S+$/, 'Invalid email format']
+        match: [/^\S+@\S+\.\S+$/, 'Invalid email format']
     },
     visitedAttractions: [{
         type: mongoose.Schema.Types.ObjectId,
