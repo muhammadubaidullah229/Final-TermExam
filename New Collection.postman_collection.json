@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "bab8b4ca-2ed1-4d00-a070-06ad5e4c8593",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39912909"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/attractions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/attractions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"attractions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/attractions/676e7b6fa701f51d02aa4c57",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/attractions/676e7b6fa701f51d02aa4c57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"attractions",
+						"676e7b6fa701f51d02aa4c57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/attractions/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Great Wall of China Updated\",\r\n    \"location\": \"China\",\r\n    \"entryFee\": 25,\r\n    \"rating\": 4.7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/attractions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"attractions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/attractions/676e7b6fa701f51d02aa4c57",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Grand Canyon\",\r\n    \"location\": \"Pakistan.\",\r\n    \"entryFee\": 20,\r\n    \"rating\": 4.7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/attractions/676e7b6fa701f51d02aa4c57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"attractions",
+						"676e7b6fa701f51d02aa4c57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/visitors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ubaidullah\",\r\n    \"email\": \"muhammadubaidullah@gmail.com\",\r\n    \"visitedAttractions\": [\"676e7b6fa701f51d02aa4c57\", \"676e84753eab07b3c90b3c78\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/visitors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visitors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/visitors/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/visitors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visitors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/visitors/676e854b3eab07b3c90b3c7d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/visitors/676e854b3eab07b3c90b3c7d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visitors",
+						"676e854b3eab07b3c90b3c7d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/visitors/676e7e72fedecdba5ad2fd38",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/visitors/676e7e72fedecdba5ad2fd38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visitors",
+						"676e7e72fedecdba5ad2fd38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/visitors/676e7e72fedecdba5ad2fd38",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe Updated\",\r\n    \"email\": \"john.doe.updated@example.com\",\r\n    \"visitedAttractions\": [\"676e7b6fa701f51d02aa4c57\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/visitors/676e7e72fedecdba5ad2fd38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"visitors",
+						"676e7e72fedecdba5ad2fd38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/reviews/676e7f53fedecdba5ad2fd3b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/reviews/676e7f53fedecdba5ad2fd3b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reviews",
+						"676e7f53fedecdba5ad2fd3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/reviews",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"attraction\": \"676e86a03eab07b3c90b3c83\",  \r\n    \"visitor\": \"676e854b3eab07b3c90b3c7d\",    \r\n    \"score\": 4,\r\n    \"comment\": \"Great place to visit!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
