@@ -64,3 +64,14 @@ exports.deleteVisitor = async (req, res) => {
         res.status(500).send(error);
     }
 };
+exports.getVisitorActivity = async (req, res) => {
+    try {
+        const visitors = await Visitor.aggregate([
+            { $unwind: "$visitedAttractions" },
+            { $group: { _id: "$_id", name: { $first: "$name" }, count: { $sum: 1 } } }
+        ]);
+        res.send(visitors);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+};

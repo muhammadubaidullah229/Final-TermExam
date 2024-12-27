@@ -16,5 +16,6 @@ router.put('/:id', AttractionController.updateAttraction);
 
 // Delete an attraction by ID
 router.delete('/:id', AttractionController.deleteAttraction);
+router.get('/top-rated', attractionController.getTopRatedAttractions);
 
 module.exports = router;

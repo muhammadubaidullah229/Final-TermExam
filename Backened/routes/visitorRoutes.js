@@ -7,5 +7,6 @@ router.get('/', visitorController.getVisitors);
 router.get('/:id', visitorController.getVisitorById);
 router.put('/:id', visitorController.updateVisitor);
 router.delete('/:id', visitorController.deleteVisitor);
+router.get('/activity', visitorController.getVisitorActivity);
 
 module.exports = router;
